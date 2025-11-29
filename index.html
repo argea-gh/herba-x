@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herbaprima — Toko Herbal Premium</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- ========================= HEADER ========================= -->
+<header class="header">
+    <div class="container nav-container">
+        <div class="logo">Herbaprima</div>
+
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#produk">Produk</a>
+            <a href="#terlaris">Terlaris</a>
+            <a href="#testimoni">Testimoni</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </div>
+</header>
+
+<!-- ========================= HERO ========================= -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Herbaprima</h1>
+        <p>Produk Herbal Premium untuk Hidup Lebih Sehat & Alami</p>
+        <a href="#produk" class="btn-primary">Lihat Produk</a>
+    </div>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slides">
+            <img src="assets/img/slider-1.jpg" alt="">
+            <img src="assets/img/slider-2.jpg" alt="">
+            <img src="assets/img/slider-3.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- ========================= PRODUK ========================= -->
+<section id="produk" class="section">
+    <h2 class="section-title">Produk Kami</h2>
+    
+    <div class="product-grid" id="product-list">
+        <!-- Card produk di-generate via JS -->
+    </div>
+</section>
+
+<!-- ========================= TERLARIS ========================= -->
+<section id="terlaris" class="section highlight-section">
+    <h2 class="section-title">Produk Terlaris</h2>
+    
+    <div class="product-grid" id="best-seller">
+        <!-- Card terlaris via JS -->
+    </div>
+</section>
+
+<!-- ========================= TESTIMONI ========================= -->
+<section id="testimoni" class="section">
+    <h2 class="section-title">Testimoni Pelanggan</h2>
+
+    <div class="testimonial-grid">
+        <div class="testimonial-card">
+            <p>"Madu Herbaprima sangat murni, rasanya enak dan efeknya terasa. Badan lebih segar!"</p>
+            <h4>— Rina, Jakarta</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"Suplemennya bagus, bikin stamina meningkat. Pengiriman cepat!"</p>
+            <h4>— Andi, Bandung</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"Produk herbal terbaik! Kualitas premium tapi harga tetap terjangkau."</p>
+            <h4>— Sari, Surabaya</h4>
+        </div>
+    </div>
+</section>
+
+<!-- ========================= FOOTER ========================= -->
+<footer id="kontak" class="footer">
+    <div class="container footer-flex">
+
+        <div>
+            <h3>Herbaprima</h3>
+            <p>Toko Herbal Premium — solusi hidup sehat alami.</p>
+        </div>
+
+        <div>
+            <h3>Kontak</h3>
+            <p>📍 Alamat: Jakarta, Indonesia</p>
+            <p>📞 WhatsApp: 0812-3456-7890</p>
+            <p>✉ Email: support@herbaprima.com</p>
+        </div>
+
+        <div>
+            <h3>Ikuti Kami</h3>
+            <p>Instagram | Facebook | TikTok</p>
+        </div>
+    </div>
+
+    <p class="footer-copy">
+        © 2025 Herbaprima — All Rights Reserved.
+    </p>
+</footer>
+
+<!-- ========================= CART ========================= -->
+<div id="cart-panel" class="cart-panel">
+    <h3>Keranjang Belanja</h3>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-total">
+        Total: <span id="cart-total">0</span>
+    </div>
+
+    <button class="btn-primary" onclick="checkoutWA()">Checkout via WhatsApp</button>
+</div>
+
+<!-- JS -->
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
